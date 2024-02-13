@@ -24,39 +24,40 @@ const index = () => {
 
   const router = useRouter();
   return (
-    <div className="flex justify-center">
+    <div>
       <div className="bg-gray-100 ">
-        <div className="text-center">
-          <h1 className="mt-[20px] text-6xl  ">
-            Welcome to CJ Ma Blawg
-          </h1>
+        <div className="flex justify-center flex-col flex-wrap">
+          <div className="text-center">
+            <h1 className="mt-[20px] text-6xl  ">Welcome to CJ Ma Blawg</h1>
+          </div>
+          <div>
+            <h1 className="text-center mt-[20px] text-4xl">Share Your Blog</h1>
+          </div>
+          <div className="flex justify-center items-center mt-[20px] ">
+            <button
+              onClick={() => {
+                router.push("/submit");
+              }}
+              className="pushable"
+            >
+              <span className="shadow"></span>
+              <span className="edge"></span>
+              <span className="front">Create Blog</span>
+            </button>
+          </div>
+          <div>
+            <h1 className="mt-[20px] text-center text-4xl">
+              See Our Thoughts And Stories Here
+            </h1>
+          </div>
         </div>
-        <div>
-          <h1 className="text-center mt-[20px] text-4xl">Share Your Blog</h1>
-        </div>
-        <div className="flex justify-center items-center mt-[20px] ">
-          <button
-            onClick={() => {
-              router.push("/submit");
-            }}
-            className="pushable"
-          >
-            <span className="shadow"></span>
-            <span className="edge"></span>
-            <span className="front">Create Blog</span>
-          </button>
-        </div>
-        <div>
-          <h1 className="mt-[20px] text-center text-4xl">
-            See Our Thoughts And Stories Here
-          </h1>
-        </div>
+
         <div className="mb-[20px] flex overflow-x-scroll whitespace-nowrap justify-start ml-[20px] gap-[30px]">
           {fetchdata?.map((bloginfo, index) => {
             return <Blogs key={index} data={bloginfo} />;
           })}
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center flex-wrap">
           <Footer />
         </div>
       </div>
