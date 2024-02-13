@@ -24,10 +24,10 @@ const index = () => {
 
   const router = useRouter();
   return (
-    <div className="flex">
+    <div className="flex justify-center">
       <div className="bg-gray-100 ">
         <div>
-          <h1 className="mt-[20px] ml-[20px] w-[680px] border-b-[3px] border-yellow-500  text-6xl  ">
+          <h1 className="mt-[20px]  text-6xl  ">
             Welcome to CJ Ma Blawg
           </h1>
         </div>
