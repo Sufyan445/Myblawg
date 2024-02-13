@@ -130,7 +130,7 @@ const Submit = () => {
       </div>
       <div className="w-[100 %]  rounded-xl border-solid flex flex-col justify-center items-center">
         <form
-          className="bg-white shadow-xl shadow-yellow-500 flex flex-col justify-center items-center p-[40px] w-[30%] rounded-2xl  "
+          className="bg-white shadow-xl min-w-[260px] shadow-yellow-500 flex flex-col justify-center items-center p-[40px] w-[30%] rounded-2xl  "
           onSubmit={handlesubmit}
         >
           <label

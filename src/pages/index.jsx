@@ -26,8 +26,8 @@ const index = () => {
   return (
     <div className="flex justify-center">
       <div className="bg-gray-100 ">
-        <div>
-          <h1 className="mt-[20px]  text-6xl  ">
+        <div className="text-center">
+          <h1 className="mt-[20px] text-6xl  ">
             Welcome to CJ Ma Blawg
           </h1>
         </div>
